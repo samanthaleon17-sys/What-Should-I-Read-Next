@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Fantasy</title>
+
+  <link rel="stylesheet" href="fantasyestilo.css">
+
+  <!-- DUBLIN CORE METADATA -->
+
+  <meta name="DC.title" content="Fantasy Collection - What Should I Read Next?">
+
+  <meta name="DC.creator" content="Samantha Sue Montes León">
+
+  <meta name="DC.subject" content="Fantasy Literature, Digital Books, Humanities, Fiction">
+
+  <meta name="DC.description" content="Interactive fantasy book collection featuring authors, summaries and modal-based book descriptions.">
+
+  <meta name="DC.publisher" content="Università di Pisa">
+
+  <meta name="DC.contributor" content="Informatica Umanistica">
+
+  <meta name="DC.date" content="2026">
+
+  <meta name="DC.type" content="Interactive Web Page">
+
+  <meta name="DC.format" content="text/html">
+
+  <meta name="DC.language" content="en">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar blue-nav">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="genres.html">Genres</a></li>
+      <li><a href="authors.html">Authors</a></li>
+      <li><a href="movies.html">If you liked this movie</a></li>
+      <li><a href="form.html">Form</a></li>
+      <li><a href="data.html">Data</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <img src="images/fantasy-header.png" alt="Fantasy header image">
+  </header>
+
+  <!-- BOOK GRID -->
+  <main class="books-container">
+
+    <!-- Fahrenheit 451 -->
+    <div class="book" onclick="openModal('fahrenheit451')">
+      <img src="images/fahrenheit451.jpg" alt="Fahrenheit 451 cover">
+    </div>
+
+    <!-- Percy Jackson -->
+    <div class="book" onclick="openModal('percyjackson')">
+      <img src="images/percyjackson.jpg" alt="Percy Jackson cover">
+    </div>
+
+    <!-- Six of Crows -->
+    <div class="book" onclick="openModal('sixofcrows')">
+      <img src="images/sixofcrows.jpg" alt="Six of Crows cover">
+    </div>
+
+    <!-- Inmortal Dark -->
+    <div class="book" onclick="openModal('inmortaldark')">
+      <img src="images/inmortaldark.jpg" alt="Inmortal Dark cover">
+    </div>
+
+    <!-- A Darker Shade of Magic -->
+    <div class="book" onclick="openModal('darkershade')">
+      <img src="images/darkershade.jpg" alt="A Darker Shade of Magic cover">
+    </div>
+
+    <!-- Serpent & Dove -->
+    <div class="book" onclick="openModal('serpentdove')">
+      <img src="images/serpentdove.jpg" alt="Serpent & Dove cover">
+    </div>
+
+  </main>
+
+  <!-- MODALS -->
+
+  <!-- Fahrenheit 451 Modal -->
+  <div class="modal" id="fahrenheit451">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('fahrenheit451')">&times;</span>
+      <h2>Fahrenheit 451</h2>
+      <p class="author">Writer: Bradbury, Ray (1920–2012)</p>
+      <p>Montag is a disciplined fireman whose job is to burn books...</p>
+      <p>Montag meets a young woman named Clarisse...</p>
+    </div>
+  </div>
+
+  <!-- Percy Jackson Modal -->
+  <div class="modal" id="percyjackson">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('percyjackson')">&times;</span>
+      <h2>Percy Jackson and the Lightning Thief</h2>
+      <p class="author">Writer:Riordan, Rick (1964-) </p>
+      <p>
+"What would happen if you discovered one day that you were actually the son of a Greek god and had to fulfill a secret mission? Well, that's exactly what happens to Percy Jackson, who from that moment on is about to experience the most exciting events of his life. Expelled from six schools, Percy suffers from dyslexia and difficulty concentrating—or at least that's the official version. Ridiculed for making up fantastic stories, even he doesn't quite believe them himself until the day the Olympian gods reveal the truth: Percy is none other than a demigod, that is, the son of a god and a mortal. And as such, he must discover who has stolen Zeus's lightning bolt and thus prevent a war from breaking out among the gods. To complete his mission, he will have the help of his friends Grover, a young satyr, and Annabeth, daughter of Athena."</p>
+    </div>
+  </div>
+
+  <!-- Six of Crows Modal -->
+  <div class="modal" id="sixofcrows">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('sixofcrows')">&times;</span>
+      <h2>Six of Crows</h2>
+      <p class="author">Writer:Bardugo, Leigh (1975-) </p>
+      <p>Kaz Brekker, a criminal mastermind who runs a notorious gambling den known as the Crow Club, must assemble a team of six individuals with the skills necessary to infiltrate (and escape) the Ice Court, an impregnable fortress guarding a secret that could shatter the world's balance of power. It's unlikely anyone will survive this mission, but if Kaz wants to become richer than he can imagine, he's going to have to gamble everything on a single card. And that card is the Six of Crows.</p>
+    </div>
+  </div>
+
+  <!-- Inmortal Dark Modal -->
+  <div class="modal" id="inmortaldark">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('inmortaldark')">&times;</span>
+      <h2>Inmortal Dark</h2>
+      <p class="author">Writer:Girma, Tigest </p>
+      <p>Kidan Adane, heiress to House Adane, has never been interested in the prestigious University of Uxlay, its vampire society, its strange houses, or its inheritances. All she cares about is finding her missing twin sister, June. But everything changes when Kidan discovers that Susenyos Sagad, a fearsome and attractive vampire whom she believes is responsible for June's disappearance, wants her inheritance.</p>
+    </div>
+  </div>
+
+  <!-- A Darker Shade of Magic Modal -->
+  <div class="modal" id="darkershade">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('darkershade')">&times;</span>
+      <h2>A Darker Shade of Magic</h2>
+      <p class="author">Writer:Schwab, Victoria (1987-) </p>
+      <p>Kell es uno de los últimos magos viajeros con una extraña habilidad para trasladarse entre universos paralelos conectados por una ciudad mágica. Existe un Londres Gris, sin magia y con un rey loco: el rey George III. Un Londres Rojo, donde se honra la vida y la magia y donde Kell creció junto al heredero de un imperio esplendoroso. Un Londres Blanco, donde la lucha por controlar la magia dejó una ciudad en ruinas. Y mucho tiempo atrás, había un Londres Negro. Pero ya nadie habla de eso. Oficialmente, Kell es el viajero Rojo, embajador del imperio de Maresh y responsable de circular la correspondencia entre los nobles de cada Londres. Extraoficialmente, es un contrabandista, al servicio de quienes estén dispuestos a pagar por objetos de mundos que jamás verán. Se trata de un hobby con consecuencias mortales, que ahora sufre en primera persona. En un viaje, Kell se cruza con Delilah Bard, una ladrona con aspiraciones idealistas. Ella le roba, lo salva de un enemigo letal y finalmente lo obliga a llevarla a otro mundo en busca de aventuras. Una magia peligrosa emerge y la traición acecha en cada rincón. Para mantener a todos los mundos a salvo, tendrán primero que luchar para seguir. </p>
+    </div>
+  </div>
+
+  <!-- Serpent & Dove Modal -->
+  <div class="modal" id="serpentdove">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('serpentdove')">&times;</span>
+      <h2>Serpent & Dove</h2>
+      <p class="author">Writer:Mahurin, Shelby (1992-)
+
+ </p>
+      <p>Two years ago, Louise le Blanc fled her coven and took refuge in the town of Cesarine, where she renounced magic to live off what she could steal. There, they hunt witches like Lou. They fear them. And they burn them.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Alumna: Samantha Sue Montes León</p>
+    <p>Progetto finale – Informatica Umanistica</p>
+  </footer>
+
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = "flex";
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+
+</body>
+</html>

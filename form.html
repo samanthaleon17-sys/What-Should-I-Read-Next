@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recommend us something!</title>
+
+<style>
+
+/* FONDO GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2f3b2f;
+  color: #f5f3e7;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background-color: #253025;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #f5f3e7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f0c66e;
+}
+
+/* HEADER */
+.page-header {
+  width: 100%;
+  height: 250px;
+  background-image: url("fantasy-header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.page-header h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0,0,0,0.45);
+  padding: 12px 30px;
+  border-radius: 6px;
+  color: #f5f3e7;
+}
+
+/* CONTENEDOR */
+.form-container {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: rgba(240,198,110,0.9);
+  color: #2f3b2f;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* INPUTS */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+/* ESTRELLAS */
+.stars {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.star {
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.star.active {
+  color: #f9f3e5;
+}
+
+/* BOTÓN */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #253025;
+  color: #f0c66e;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d261d;
+}
+
+/* MENSAJE */
+.success {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+  display: none;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px;
+  background-color: #253025;
+  color: #f0c66e;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="genres.html">Genres</a></li>
+<li><a href="authors.html">Authors</a></li>
+<li><a href="movies.html">If you like this movie</a></li>
+<li><a href="form.html">Recommendation</a></li>
+</ul>
+</nav>
+
+<!-- HEADER -->
+<header class="page-header">
+<h1>Recommend us something!</h1>
+</header>
+
+<!-- FORMULARIO -->
+<div class="form-container">
+
+<form id="bookForm">
+
+<label>Title</label>
+<input type="text" required>
+
+<label>Author</label>
+<input type="text" required>
+
+<label>Summerize</label>
+<textarea required></textarea>
+
+<label>Puntuation</label>
+
+<div class="stars" id="stars">
+<span class="star" data-value="1">★</span>
+<span class="star" data-value="2">★</span>
+<span class="star" data-value="3">★</span>
+<span class="star" data-value="4">★</span>
+<span class="star" data-value="5">★</span>
+</div>
+
+<label>Similar book</label>
+<input type="text">
+
+<button type="submit">Enviar sugerencia</button>
+
+<div class="success" id="success">
+Suggesstion send correctly!
+</div>
+
+</form>
+</div>
+
+<footer>
+Samantha Sue Montes Leon
+</footer>
+
+<script>
+
+/* ESTRELLAS INTERACTIVAS */
+const stars = document.querySelectorAll(".star");
+let rating = 0;
+
+stars.forEach(star => {
+
+star.addEventListener("click", () => {
+rating = star.getAttribute("data-value");
+
+stars.forEach(s => {
+s.classList.remove("active");
+});
+
+for (let i = 0; i < rating; i++) {
+stars[i].classList.add("active");
+}
+
+});
+
+});
+
+/* MENSAJE DE ENVÍO */
+document.getElementById("bookForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+document.getElementById("success").style.display = "block";
+
+});
+
+</script>
+
+</body>
+</html>

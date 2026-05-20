@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>if you like this movie</title>
+
+<style>
+
+/* FONDO */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2f3b2f;
+  color: #f5f3e7;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  background-color: #253025;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.navbar a {
+  color: #f5f3e7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f0c66e;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+  height: 300px;
+  background-image: url("header-movies.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+/* CONTENEDOR */
+.movies-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* PELICULA */
+.movie {
+  display: flex;
+  gap: 25px;
+  background-color: rgba(240,198,110,0.9);
+  color: #2f3b2f;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.movie:hover {
+  transform: scale(1.02);
+}
+
+/* IMAGEN */
+.movie img {
+  width: 150px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* TEXTO */
+.movie-info h2 {
+  margin-top: 0;
+}
+
+.movie-info p {
+  line-height: 1.6;
+}
+
+/* RECOMENDACIONES */
+.recommendations {
+  display: none;
+  margin-top: 10px;
+  background-color: rgba(47,59,47,0.9);
+  color: #f5f3e7;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #253025;
+  color: #f0c66e;
+  margin-top: 50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="genres.html">Genres</a></li>
+<li><a href="Authors.html">If you like this movie</a></li>
+<li><a href="form.html">Recommendation</a></li>
+<li><a href="data.html">Data</a></li>
+</ul>
+</nav>
+
+<!-- HEADER -->
+<section class="header">
+<div class="header-overlay">
+<h1>Movies & Book Connections</h1>
+</div>
+</section>
+
+<!-- CONTENEDOR -->
+<section class="movies-container">
+
+<!-- LA ASISTENTA -->
+<div class="movie" onclick="toggleRec('rec1')">
+<img src="images/asistenta.jpg">
+<div class="movie-info">
+<h2>La Asistenta</h2>
+<p>Un thriller psicológico lleno de secretos, tensión y giros inesperados dentro de una familia aparentemente perfecta.</p>
+
+<div class="recommendations" id="rec1">
+<strong>Recomendaciones:</strong>
+<ul>
+<li>The Housemaid — Freida McFadden</li>
+<li>The Girl on the Train — Paula Hawkins</li>
+<li>Gone Girl — Gillian Flynn</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- LOS JUEGOS DEL HAMBRE -->
+<div class="movie" onclick="toggleRec('rec2')">
+<img src="images/juegos.jpg">
+<div class="movie-info">
+<h2>Hunger Games</h2>
+<p>Una distopía donde jóvenes luchan por sobrevivir en un sistema controlado por el poder y la desigualdad.</p>
+
+<div class="recommendations" id="rec2">
+<ul>
+<li>Divergente — Veronica Roth</li>
+<li>The Maze Runner — James Dashner</li>
+<li>Legend — Marie Lu</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- LITTLE WOMEN -->
+<div class="movie" onclick="toggleRec('rec3')">
+<img src="images/little.jpg">
+<div class="movie-info">
+<h2>Little Women</h2>
+<p>Historia sobre la familia, el crecimiento personal y los sueños de cuatro hermanas en la sociedad del siglo XIX.</p>
+
+<div class="recommendations" id="rec3">
+<ul>
+<li>Pride and Prejudice — Jane Austen</li>
+<li>Anne of Green Gables — L. M. Montgomery</li>
+<li>Emma — Jane Austen</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- 10 THINGS I HATE ABOUT YOU -->
+<div class="movie" onclick="toggleRec('rec4')">
+<img src="images/things.jpg">
+<div class="movie-info">
+<h2>10 Things I Hate About You</h2>
+<p>Comedia romántica juvenil basada en Shakespeare, llena de humor, amor y personajes inolvidables.</p>
+
+<div class="recommendations" id="rec4">
+<ul>
+<li>Pride and Prejudice — Jane Austen</li>
+<li>The Fault in Our Stars — John Green</li>
+<li>To All the Boys I've Loved Before — Jenny Han</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- BLACK SWAN -->
+<div class="movie" onclick="toggleRec('rec5')">
+<img src="images/swan.jpg">
+<div class="movie-info">
+<h2>Black Swan</h2>
+<p>Un intenso drama psicológico sobre la obsesión, la perfección y la presión en el mundo del ballet.</p>
+
+<div class="recommendations" id="rec5">
+<ul>
+<li>The Bell Jar — Sylvia Plath</li>
+<li>The Secret History — Donna Tartt</li>
+<li>Perfume — Patrick Süskind</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<!-- DEAD POETS SOCIETY -->
+<div class="movie" onclick="toggleRec('rec6')">
+<img src="images/poets.jpg">
+<div class="movie-info">
+<h2>Dead Poets Society</h2>
+<p>Un profesor inspira a sus estudiantes a pensar por sí mismos y vivir la vida con pasión y libertad.</p>
+
+<div class="recommendations" id="rec6">
+<ul>
+<li>The Catcher in the Rye — J. D. Salinger</li>
+<li>1984 — George Orwell</li>
+<li>The Perks of Being a Wallflower — Stephen Chbosky</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+Biblioteca Fantástica
+</footer>
+
+<script>
+
+function toggleRec(id) {
+
+let rec = document.getElementById(id);
+
+if(rec.style.display === "block"){
+rec.style.display = "none";
+} else {
+rec.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>

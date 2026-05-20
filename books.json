@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Percy Jackson",
+    "author": "Rick Riordan",
+    "genre": "Fantasy",
+    "year": "2005"
+  },
+
+  {
+    "title": "Six of Crows",
+    "author": "Leigh Bardugo",
+    "genre": "Fantasy",
+    "year": "2015"
+  },
+
+  {
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "genre": "Dystopian",
+    "year": "2008"
+  },
+
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Classic",
+    "year": "1813"
+  },
+
+  {
+    "title": "Immortal Dark",
+    "author": "Tigest Girma",
+    "genre": "Fantasy",
+    "year": "2024"
+  },
+
+  {
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "genre": "Dystopian",
+    "year": "1953"
+  },
+
+  {
+    "title": "Serpent & Dove",
+    "author": "Shelby Mahurin",
+    "genre": "Fantasy",
+    "year": "2019"
+  }
+]

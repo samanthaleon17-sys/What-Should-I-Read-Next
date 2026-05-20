@@ -1,0 +1,103 @@
+[
+  {
+    "name": "Isabel Allende",
+    "country": "Chile",
+    "genre": "Magic Realism, Historical Narrative",
+    "notableWorks": [
+      "The House of the Spirits",
+      "Paula",
+      "Eva Luna"
+    ]
+  },
+
+  {
+    "name": "Gabriel García Márquez",
+    "country": "Colombia",
+    "genre": "Magic Realism",
+    "notableWorks": [
+      "One Hundred Years of Solitude",
+      "Love in the Time of Cholera",
+      "Chronicle of a Death Foretold"
+    ]
+  },
+
+  {
+    "name": "Jorge Luis Borges",
+    "country": "Argentina",
+    "genre": "Philosophical Fiction",
+    "notableWorks": [
+      "Ficciones",
+      "The Aleph",
+      "The Book of Sand"
+    ]
+  },
+
+  {
+    "name": "Jane Austen",
+    "country": "United Kingdom",
+    "genre": "Romance Novel",
+    "notableWorks": [
+      "Pride and Prejudice",
+      "Sense and Sensibility",
+      "Emma"
+    ]
+  },
+
+  {
+    "name": "Suzanne Collins",
+    "country": "United States",
+    "genre": "Young Adult Dystopian",
+    "notableWorks": [
+      "The Hunger Games",
+      "Catching Fire",
+      "Mockingjay"
+    ]
+  },
+
+  {
+    "name": "Rick Riordan",
+    "country": "United States",
+    "genre": "Fantasy",
+    "notableWorks": [
+      "Percy Jackson",
+      "Heroes of Olympus"
+    ]
+  },
+
+  {
+    "name": "Leigh Bardugo",
+    "country": "United States",
+    "genre": "Fantasy",
+    "notableWorks": [
+      "Six of Crows",
+      "Shadow and Bone"
+    ]
+  },
+
+  {
+    "name": "Tigest Girma",
+    "country": "Ethiopia",
+    "genre": "Fantasy",
+    "notableWorks": [
+      "Immortal Dark"
+    ]
+  },
+
+  {
+    "name": "Ray Bradbury",
+    "country": "United States",
+    "genre": "Science Fiction",
+    "notableWorks": [
+      "Fahrenheit 451"
+    ]
+  },
+
+  {
+    "name": "Shelby Mahurin",
+    "country": "United States",
+    "genre": "Fantasy",
+    "notableWorks": [
+      "Serpent & Dove"
+    ]
+  }
+]
